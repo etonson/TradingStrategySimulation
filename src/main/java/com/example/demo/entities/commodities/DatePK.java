@@ -9,9 +9,9 @@ import jakarta.persistence.Embeddable;
 @Embeddable
 public class DatePK implements Serializable {
 	private static final long serialVersionUID = 1L;
-	@Column(length = 8)
+	@Column(length = 10)
 	private String date;
-	@Column(length = 8)
+	@Column(length = 5)
 	private String time;
 
 	public DatePK() {

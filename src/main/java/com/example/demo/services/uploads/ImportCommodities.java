@@ -1,4 +1,4 @@
-package com.example.demo.services.etls;
+package com.example.demo.services.uploads;
 
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.example.demo.utils.file.FileEnvironmentTool;
 
 @RestController
-@RequestMapping("base")
+@RequestMapping(path="base")
 public class ImportCommodities {
 	@Value("${file.uploadFolder}")
 	private String rootPath;
