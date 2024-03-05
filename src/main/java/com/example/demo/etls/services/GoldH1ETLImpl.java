@@ -75,7 +75,7 @@ public class GoldH1ETLImpl implements ETLTool<GoldH1> {
 	@Override
 	public List<GoldH1> transForm(JSONArray jsonArray) throws Exception {
 		List<GoldH1> result = new ArrayList<GoldH1>();
-		for(int i=0;i<jsonArray.length();i++) {
+		for(int i=0;i<jsonArray.length()-1;i++) {
 			JSONObject jsonObj = jsonArray.optJSONObject(i);
 			DatePK pk = new DatePK();
 			pk.setDate(jsonObj.optString("date"));
