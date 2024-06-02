@@ -42,7 +42,6 @@ public class GoldH1ETLImpl implements ETLTool<GoldH1> {
 				jsonArray = jsonObj.optJSONArray("rm");
 				jsonObj = null;
 				List<GoldH1> loadList = transForm(jsonArray);
-				System.out.println(loadList.size());
 				jsonArray = null;
 				boolean loadResult =goldH1DaoImpl.batchSave(loadList);
 				loadList = null;
